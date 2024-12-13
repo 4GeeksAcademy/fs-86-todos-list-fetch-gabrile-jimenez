@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React, { useState} from "react";
 import {motion} from 'framer-motion';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
@@ -8,9 +8,6 @@ import './home2.css'
 const HomeTwo = () => {
     const [list, setList] = useState([]);
     const [change, setChange] = useState('');
-    
-    
-   
   
     const handleChange = (e) => {
         setChange(e.target.value);
@@ -22,6 +19,7 @@ const HomeTwo = () => {
         setChange('');
         }
     }
+
     const itemDelete = (wish) => {
         const newList = list.filter( (_,index) => {
             return index !== wish;
@@ -29,8 +27,6 @@ const HomeTwo = () => {
         setList(newList); 
     }
    
- 
-
   return(<>
       <div className='list-container'>
         <h1 className="list-titleOne">¡Wishes list</h1>
