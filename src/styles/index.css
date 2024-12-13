@@ -10,3 +10,28 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+body{
+    background-image: url('https://files.oaiusercontent.com/file-NsWjpkqM8RupzmsWwzRMKX?se=2024-12-12T10%3A28%3A55Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D385f25cf-e38b-44b9-acc0-87d1f8f0d1d5.webp&sig=/VAhcAmd6hocen1LTavhpAHx184MVEsbSQasYWto76s%3D');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width:200vh;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#app{
+    background-image: url('https://files.oaiusercontent.com/file-NsWjpkqM8RupzmsWwzRMKX?se=2024-12-12T10%3A28%3A55Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D385f25cf-e38b-44b9-acc0-87d1f8f0d1d5.webp&sig=/VAhcAmd6hocen1LTavhpAHx184MVEsbSQasYWto76s%3D');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 80%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    box-shadow: 0px 0px 20px rgba(227, 235, 156, 0.804),
+                0px 0px 30px rgba(245, 245, 245, 0.129),
+                0px 0px 40px rgba(245, 245, 245, 0.129);
+}

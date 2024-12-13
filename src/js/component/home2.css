@@ -1,0 +1,102 @@
+.list-container{
+    margin: 20px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: stretch;
+    padding: 15px;
+ 
+}
+.list-titleOne{
+    font-size: 7rem;
+    font-weight: bold;
+    background: linear-gradient(to right, green, red, white , green, red);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+}
+.list-titleTwo{
+    font-size: 4rem;
+    font-weight: bold;
+    background: linear-gradient(to right, green, red, white , green, red);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+}
+.list-button__add{
+    
+    background: linear-gradient(to right, red, green); 
+        -webkit-text-fill-color: white;
+}
+.list-paper{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 80%; 
+    height: 100%;
+    position: relative;
+    padding: 20px;
+    margin: 20px auto;
+    background: #f4e4c1; 
+    border: 1px solid #d2b48c; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    border-radius: 10px; 
+    font-family: 'Georgia', serif; 
+      background: repeating-linear-gradient(
+        to bottom,
+        #f4e4c156, 
+        #f4e4c156 24px, 
+        #d2b48c 25px 
+      ); 
+    }
+.list-paper:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 45px; 
+    height: 100%;
+    width: 2px;
+    background: #d2b48c;
+  }
+  .list-wish{
+    color:white;
+    font-size: large;
+    font-weight: 600;
+    list-style-type: none;
+    gap: 1rem;
+  }
+  input{
+    background: rgba(255, 255, 255, 0.388);
+  }
+  input::placeholder {
+    color: black;
+  }
+  .list-item{
+    position: relative;
+    gap:5rem;
+  }
+  .list-item{
+    position: relative;
+    gap:5rem;
+  }
+  .list-button__delete{
+    font-size: small;
+    border-radius: 50%;
+    background-color: #f4e4c156;
+    opacity: 0; 
+    pointer-events: none; 
+    transition: opacity 0.3s ease;
+  }
+  .list-item:hover .list-button__delete{
+    opacity: 1; 
+    pointer-events: auto; 
+  }
+  .list-footer{
+    margin-left: 40px;
+    font-size: 2rem;
+    background: linear-gradient(to right, green, red);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: 0 0 20px white, 0 0 30px white, 0 0 40px white;
+       
+  }
