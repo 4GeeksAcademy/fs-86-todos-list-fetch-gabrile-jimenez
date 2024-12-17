@@ -1,9 +1,9 @@
 import React from "react";
-import HomeTwo from "./home2.jsx";
+import WishList from "./wishlist.jsx";
 
 const Lista = () => {
     return(<>
-    <HomeTwo/>
+    <WishList/>
     </>);
 }
 
