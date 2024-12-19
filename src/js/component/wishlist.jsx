@@ -16,10 +16,22 @@ const WishList= () => {
     const getWishList = async () => {
         const response = await fetch('https://playground.4geeks.com/todo/users/angel', {method:'GET'});
         console.log(response); 
+        if (!response.ok){
+            createUser();
+        };
         const data = await response.json();
         console.log(data);
         setList(data.todos);
     }
+    
+    const createUser = async () => {
+        const response = await fetch('https://playground.4geeks.com/todo/users/angel', {method:'POST'});
+        console.log(response);   
+        
+    };
+    
+
+    
         
     const itemAdd = async () => {
         if( change.trim() === '') return;
@@ -57,7 +69,7 @@ const WishList= () => {
         }
     }
 
-    const itemDelete = async(id) => {
+    const itemDelete = async (id) => {
         try {
             const response = await fetch(`https://playground.4geeks.com/todo/todos/${id}`, {method:'DELETE'});
             console.log(response);
